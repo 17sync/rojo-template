@@ -23,8 +23,8 @@ The src folder hierarchy is based on the json file and the dummy scripts are jus
       "Remotes": {
         "$path": "src/remotes"
       },
-      "Packages": {
-        "$path": "src/packages"
+      "Assets": {
+        "$path": "src/assets"
       }
     },
 
@@ -70,8 +70,8 @@ DataModel
 │  │  └─ src/shared
 │  ├─ Remotes
 │  │  └─ src/remotes
-│  └─ Packages
-│     └─ src/packages
+│  └─ Assets
+│     └─ src/assets
 ├─ ServerScriptService
 │  └─ Server
 │     └─ src/server
