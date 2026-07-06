@@ -8,7 +8,7 @@ The src folder hierarchy is based on the json file and the dummy scripts are jus
 ### default.project.json
 ```json
 {
-  "name": "Project Template",
+  "name": "Project Title",
   "tree": {
     "$className": "DataModel",
 
@@ -17,41 +17,15 @@ The src folder hierarchy is based on the json file and the dummy scripts are jus
     },
 
     "ReplicatedStorage": {
-      "$path": "src/replicatedstorage",
-
-      "Shared": {
-        "$path": "src/replicatedstorage/shared"
-      },
-      "Remotes": {
-        "$path": "src/replicatedstorage/remotes"
-      },
-      "Assets": {
-        "$path": "src/replicatedstorage/assets",
-
-        "Animations": {
-          "$path": "src/replicatedstorage/assets/animations"
-        },
-        "Sounds": {
-          "$path": "src/replicatedstorage/assets/sounds"
-        },
-        "Effects": {
-          "$path": "src/replicatedstorage/assets/effects"
-        },
-        "Models": {
-          "$path": "src/replicatedstorage/assets/models"
-        },
-        "Packages": {
-          "$path": "src/replicatedstorage/packages"
-        }
-      }
+      "$path": "src/replicatedstorage"
     },
 
     "ServerScriptService": {
-      "$path": "src/serverscriptservice",
+      "$path": "src/serverscriptservice"
+    },
 
-      "Services": {
-        "$path": "src/serverscriptservice/services"
-      }
+    "ServerStorage": {
+      "$path": "src/serverstorage"
     },
 
     "StarterGui": {
@@ -59,20 +33,23 @@ The src folder hierarchy is based on the json file and the dummy scripts are jus
     },
 
     "StarterPlayer": {
-      "$path": "src/starterplayer",
-
       "StarterPlayerScripts": {
-        "$path": "src/starterplayer/starterplayerscripts"
+      "$path": "src/starterplayerscripts"
       },
+
       "StarterCharacterScripts": {
-        "$path": "src/starterplayer/startercharacterscripts"
+      "$path": "src/startercharacterscripts"
       }
     },
-
-     "SoundService": {
-            "$path": "src/soundservice"
+    
+    "SoundService": {
+      "$path": "src/soundservice"
     },
 
+    "TextChatService": {
+      "$path": "src/textchatservice"
+    },
+    
     "Lighting": {
       "$properties": {
         "Ambient": [0, 0, 0],
@@ -99,10 +76,11 @@ DataModel
 │  ├─ Assets
 │  │  └─ src/replicatedstorage/assets
 │  └─ Packages
-      └─src/replicatedstorage/packages  
+│      └─src/replicatedstorage/packages  
 ├─ ServerScriptService
 │  └─ Services
 │     └─ src/serverscriptservice/services
+├─ ServerStorage
 ├─ StarterGui
 │  └─ src/startergui
 ├─ StarterPlayer
@@ -110,6 +88,7 @@ DataModel
 │  │  └─ src/starerplayerscripts
 │  └─ StarterCharacterScripts
 │     └─ src/startercharacterscripts
-└─ SoundService
-    └─ src/soundservice
+├─ SoundService
+│   └─ src/soundservice
+└─ TextChatService
 ```
