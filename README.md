@@ -8,7 +8,7 @@ The src folder hierarchy is based on the json file and the dummy scripts are jus
 ### default.project.json
 ```json
 {
-  "name": "Project Title",
+  "name": "Project Template",
   "tree": {
     "$className": "DataModel",
 
@@ -17,34 +17,60 @@ The src folder hierarchy is based on the json file and the dummy scripts are jus
     },
 
     "ReplicatedStorage": {
+      "$path": "src/replicatedstorage",
+
       "Shared": {
-        "$path": "src/shared"
+        "$path": "src/replicatedstorage/shared"
       },
       "Remotes": {
-        "$path": "src/remotes"
+        "$path": "src/replicatedstorage/remotes"
       },
       "Assets": {
-        "$path": "src/assets"
+        "$path": "src/replicatedstorage/assets",
+
+        "Animations": {
+          "$path": "src/replicatedstorage/assets/animations"
+        },
+        "Sounds": {
+          "$path": "src/replicatedstorage/assets/sounds"
+        },
+        "Effects": {
+          "$path": "src/replicatedstorage/assets/effects"
+        },
+        "Models": {
+          "$path": "src/replicatedstorage/assets/models"
+        },
+        "Packages": {
+          "$path": "src/replicatedstorage/packages"
+        }
       }
     },
 
     "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
+      "$path": "src/serverscriptservice",
+
+      "Services": {
+        "$path": "src/serverscriptservice/services"
       }
     },
 
     "StarterGui": {
-      "$path": "src/gui"
+      "$path": "src/startergui"
     },
 
     "StarterPlayer": {
+      "$path": "src/starterplayer",
+
       "StarterPlayerScripts": {
-        "$path": "src/client"
+        "$path": "src/starterplayer/starterplayerscripts"
       },
       "StarterCharacterScripts": {
-        "$path": "src/character"
+        "$path": "src/starterplayer/startercharacterscripts"
       }
+    },
+
+     "SoundService": {
+            "$path": "src/soundservice"
     },
 
     "Lighting": {
@@ -67,19 +93,23 @@ DataModel
 │  └─ src/replicatedfirst
 ├─ ReplicatedStorage
 │  ├─ Shared
-│  │  └─ src/shared
+│  │  └─ src/replicatedstorage/shared
 │  ├─ Remotes
-│  │  └─ src/remotes
-│  └─ Assets
-│     └─ src/assets
+│  │  └─ src/replicatedstorage/remotes
+│  ├─ Assets
+│  │  └─ src/replicatedstorage/assets
+│  └─ Packages
+      └─src/replicatedstorage/packages  
 ├─ ServerScriptService
-│  └─ Server
-│     └─ src/server
+│  └─ Services
+│     └─ src/serverscriptservice/services
 ├─ StarterGui
-│  └─ src/gui
-└─ StarterPlayer
-   ├─ StarterPlayerScripts
-   │  └─ src/client
-   └─ StarterCharacterScripts
-      └─ src/character
+│  └─ src/startergui
+├─ StarterPlayer
+│  ├─ StarterPlayerScripts
+│  │  └─ src/starerplayerscripts
+│  └─ StarterCharacterScripts
+│     └─ src/startercharacterscripts
+└─ SoundService
+    └─ src/soundservice
 ```
